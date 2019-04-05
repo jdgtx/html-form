@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+input{
+    display:block;
+    padding:5px;
+    margin:5px 0;
+    width:40%;
+}
+
+.books input,select{
+    display:inline-block;
+}
+
+.customer,.books{
+
+   border:1px solid black; 
+   margin:1vh;
+   padding:10px;
+}
+
+form{
+    padding:10px;
+    width:50%;
+}
+
+input[type=submit]{
+    margin:1vh;
+}
+
+

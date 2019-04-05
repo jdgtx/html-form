@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>HTML form</title>
+</head>
+<body>
+
+    <form action="#" autocomplete="on">
+        <div class="customer">
+            <h4>Customer info</h4>
+            <label for="name">Name:</label>
+            <input type='text' id="name" placeholder="Enter your name" name="name" required autofocus>
+
+            <label for="phone">Telephone:</label>
+            <input type='tel' id="phone" name="phone" placeholder="1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" multiple required>
+
+        </div>
+
+        <div class="books">
+            <h4>Books</h4>
+            <select name="books">
+                <option value="empty">...</option>
+                <option value="theLordofTheRing">The Lord of the Rings</option>
+                <option value="1984">1984</option>
+                <option value="toKillaMockingBird">To kill a Mockingbird</option>
+                <option value="theCatcherInTheRye">The Catcher in the Rye</option>
+                <option value="LordOfTheFlies">Lord of the Flies</option>
+            </select>
+
+            <label for="quantity">Quantity (Maximum 5):</label>
+           <input type="number" id="quantity" name="quantity" min=1 max=5 />
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
